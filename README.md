@@ -1,1 +1,1 @@
-# C45-Tablet-Student Activity
+# C45-Tablet-Teacher Activity
