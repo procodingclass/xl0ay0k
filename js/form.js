@@ -6,9 +6,9 @@ class Form {
     this.greetings2 = createElement("h2");
   }
   display() {
-    this.input.position(displayWidth / 2 - 90, displayHeight / 2 - 150);
+    this.input.position(380, 180);
     this.input.size(180, 30);
-    this.buttonImg.position(displayWidth / 2 + 50, displayHeight / 2 - 100);
+    this.buttonImg.position(475 + 50, 250);
     this.buttonImg.size(150, 50);
 
     this.buttonImg.mousePressed(() => {
@@ -22,8 +22,8 @@ class Form {
       console.log(player.index);
       player.addPlayer();
       player.updateCount(playerCount);
-      this.greetings.html("Hello " + player.name);
-      this.greetings.position(displayWidth / 2 - 200, displayHeight / 2 - 150);
+    this.greetings.html("Hello " + player.name);
+      this.greetings.position(300, 180);
     });
   }
 
@@ -42,10 +42,10 @@ class Form {
 
    
 
-    this.greetings2.html(
+ 
+      this.greetings2.html(
       "Congratulations " + player.name + " Your Rank is " + player.rank
     );
-    this.greetings2.class("greeting");
-    this.greetings2.position(displayWidth / 2 - 100, displayHeight / 2 - 50);
+    this.greetings2.position(300, 185);
   }
 }
